@@ -27,9 +27,9 @@ func main() {
 
 	// 4
 	isTodayMonday := true
-	americanoOrder := 3	// 아메리카노 주문량
-	latterOrder := 5	// 라떼 주문량
-	totalPrice := 0		// 총 금액
+	americanoOrder := 3 // 아메리카노 주문량
+	latterOrder := 5    // 라떼 주문량
+	totalPrice := 0     // 총 금액
 
 	totalPrice = (americanoPrice * americanoOrder) + (lattePrice * latterOrder)
 	// 총 금액이 5000 초과이면 10% 할인
@@ -54,7 +54,7 @@ func main() {
 	totalPrice2 := 0
 
 	// for 1
-	for i:=0;i<len(drinkPrices2);i++ {
+	for i := 0; i < len(drinkPrices2); i++ {
 		totalPrice2 += drinkPrices2[i]
 	}
 
@@ -73,7 +73,7 @@ func main() {
 	totalPrice3 := 0
 	orderedDrinks := ""
 
-	for i:=0;i<len(drinkNames3);i++ {
+	for i := 0; i < len(drinkNames3); i++ {
 		// 2000원 이하 음료만 주문
 		if drinkPrices3[i] > 2000 {
 			continue
