@@ -90,4 +90,25 @@ func main() {
 	fmt.Println("손님이 주문한 최종 금액 : ", totalPrice3)
 
 	// 7
+	// use function - 카페에 전화를 건 손님에게 인사한 후 , 요일에 따라 마감시간을 안내하는 함수를 만들어 봅시다
+	fmt.Println("//----------------------------------------\n")
+	greeting()
+	greeting2("수요일")
+	fmt.Println("//----------------------------------------\n")
+}
+
+func greeting() {
+	fmt.Println("여기는 GoCafe입니다\n마감시간을 알려드리겠습니다\n")
+}
+
+func greeting2(day string) {
+	if day == "화요일" || day == "목요일" {
+		fmt.Println("마감시간은 9시입니다")
+	} else if day == "월요일" || day == "수요일" || day == "금요일" {
+		fmt.Println("마감시간은 10시입니다")
+	} else if day == "토요일" {
+		fmt.Println("마감시간은 8시입니다")
+	} else {
+		fmt.Println("휴무입니다")
+	}
 }
